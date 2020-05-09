@@ -1,0 +1,87 @@
+.bgImage {
+  height: 30vh;
+  /* background-image: url(https://thelittlewashhouse.files.wordpress.com/2015/02/appenzeller-alpaufzug-687d32ee-f88e-4cdd-8395-8c4ed2e4e28f.jpg); */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.bgImage > select,
+.bgImage > h2,
+.bgImage > h1 {
+  margin-bottom: 30px;
+}
+
+.bgImage > h2 {
+  color: #ffffff;
+  margin-right: 800px;
+}
+
+.bgImage > h1 {
+  color: white;
+  margin-right: 700px;
+}
+.bgImage > select {
+  margin-right: 30px;
+}
+.FirstIndex {
+  padding: 20px;
+  display: grid;
+  grid-gap: 20px;
+  background-color: rgba(221, 160, 221, 0.5);
+}
+
+.SecIndex {
+  margin: 20px;
+  background-color: rgb(245, 240, 245, 0.8);
+}
+
+.SecIndex > img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+.SecIndex > h4
+/* .SecIndex > h5 { */ {
+  padding: 20px;
+  text-align: center;
+}
+
+@media only screen and (max-width: 1600px) {
+  .FirstIndex {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .SecIndex {
+    margin: 0;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .FirstIndex {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .SecIndex {
+    margin: 0;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .FirstIndex {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .SecIndex {
+    margin: 0;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .FirstIndex {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .SecIndex {
+    margin: 0;
+  }
+}
